@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css';
 import SideMenu from '../components/SideMenu'
+import Header from '../components/Header';
 import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -17,7 +18,9 @@ function App() {
   return (
     <>
     <SideMenu/>
-    <div className={classes.appMain}>here we go</div>
+    <div className={classes.appMain}>
+      <Header/>
+    </div>
     </>
   );
 }
