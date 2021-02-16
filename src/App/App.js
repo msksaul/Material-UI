@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css';
 import SideMenu from '../components/SideMenu'
 import Header from '../components/Header';
-import { makeStyles } from '@material-ui/core';
+import { CssBaseline, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
   appMain: {
@@ -21,6 +21,7 @@ function App() {
     <div className={classes.appMain}>
       <Header/>
     </div>
+    <CssBaseline/>
     </>
   );
 }
